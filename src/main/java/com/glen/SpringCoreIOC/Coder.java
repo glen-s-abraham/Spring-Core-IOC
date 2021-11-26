@@ -4,21 +4,15 @@ public class Coder {
 	
 	private int age;
 	
-	private Laptop laptop;
+	private Computer computer;
 	
 	public Coder() {
 		System.out.println("Coder Object created");
 	}
 	
-
-	
-	public Coder(int age, Laptop laptop) {
-		super();
+	public Coder(int age) {
 		this.age = age;
-		this.laptop = laptop;
 	}
-
-
 
 	public int getAge() {
 		return age;
@@ -28,19 +22,19 @@ public class Coder {
 		this.age = age;
 	}
 
+
+	public Computer getComputer() {
+		return computer;
+	}
+
+
+
+	public void setComputer(Computer computer) {
+		this.computer = computer;
+	}
 	
-	public Laptop getLaptop() {
-		return laptop;
-	}
-
-
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
-	}
-
-
 	public void code() {
 		System.out.println("Coding....");
-		laptop.compile();
+		computer.compile();
 	}
 }

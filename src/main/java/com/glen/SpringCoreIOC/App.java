@@ -15,7 +15,6 @@ public class App {
 		ApplicationContext beanFactory = new ClassPathXmlApplicationContext("spring.xml");
 		Coder coder = (Coder) beanFactory.getBean("coder");
 		coder.code();
-		System.out.println(coder.getAge());
 		
 	}
 }

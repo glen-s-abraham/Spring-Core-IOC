@@ -5,11 +5,14 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-	<bean id="coder" class="com.glen.SpringCoreIOC.Coder">
-		<constructor-arg value="12"></constructor-arg>
-		<constructor-arg ref="laptop"></constructor-arg>
+    <bean id="coder" class="com.glen.SpringCoreIOC.Coder"
+    	autowire="byType">
+    	<property name="age" value="12"></property>
 
-	</bean>
-	<bean id="laptop" class="com.glen.SpringCoreIOC.Laptop"></bean>
+    </bean>
+    <bean id="laptop" class="com.glen.SpringCoreIOC.Laptop"
+    	primary="true">
+    </bean>
+    <bean id="computer" class="com.glen.SpringCoreIOC.Desktop"></bean>
 
 </beans>
