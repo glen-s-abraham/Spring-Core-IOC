@@ -6,8 +6,10 @@
 
     <!-- bean definitions here -->
 	<bean id="coder" class="com.glen.SpringCoreIOC.Coder">
-		<property name="age" value="10"></property>
+		<constructor-arg value="12"></constructor-arg>
+		<constructor-arg ref="laptop"></constructor-arg>
 
 	</bean>
+	<bean id="laptop" class="com.glen.SpringCoreIOC.Laptop"></bean>
 
 </beans>

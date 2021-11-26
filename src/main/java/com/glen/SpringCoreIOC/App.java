@@ -17,9 +17,5 @@ public class App {
 		coder.code();
 		System.out.println(coder.getAge());
 		
-	
-		
-	
-		
 	}
 }
