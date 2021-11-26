@@ -5,6 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-	<bean id="coder" class="com.glen.SpringCoreIOC.Coder" scope="prototype"></bean>
+	<bean id="coder" class="com.glen.SpringCoreIOC.Coder">
+		<property name="age" value="10"></property>
+
+	</bean>
 
 </beans>
